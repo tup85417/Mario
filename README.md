@@ -1,6 +1,6 @@
 # Mario
 Creating a mario game for Final Project in CIS 1051
-# Preproposal:
+## Preproposal:
 
 ## What idea(s) do you have for your final project?
 
