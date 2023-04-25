@@ -15,11 +15,10 @@ function love.load()
     map = Map()
 
     push:setupScreen(virtual_width, virtual_heigth, window_width, window_height, {
-    fullscreen = false,
-    resizable = false,
-    vsynce = true
-    }
-)
+        fullscreen = false,
+        resizable = false,
+        vsynce = true
+    })
 
 end
 

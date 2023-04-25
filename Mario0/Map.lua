@@ -70,5 +70,4 @@ function Map:render()
 
         end
     end
-
 end
