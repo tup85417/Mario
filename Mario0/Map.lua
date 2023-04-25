@@ -34,6 +34,7 @@ function Map:init()
     for y = self.mapHeight / 2, self.mapHeight do
         for x = 1, self.mapWidth do
             self:setTile(x, y, tile_brick)
+        end
     end
 
 end
@@ -64,10 +65,7 @@ function Map:render()
 
     for y = 1, self.mapHeight do
         for x = 1, self.mapHeight do
-
-            love.graphics.draw(self.spritesheet, self.tileSprites[self.getTile(x, y)],
-                (x - 1) * self.tileWidth, (y - 1) * self.tileHeight)
-
+            love.graphics.draw(self.spritesheet, self.tileSprites[self.getTile(x, y)],(x - 1) * self.tileWidth, (y - 1) * self.tileHeight)
         end
     end
 end
