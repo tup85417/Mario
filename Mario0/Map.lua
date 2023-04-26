@@ -7,7 +7,7 @@ local scroll_speed = 62
 
 function Map:init()
 
-    self.spritesheet = love.graphics.newImage('graphics/tiles.png')
+    self.spritesheet = love.graphics.newImage('spritesheet.png')
     self.tileWidth = 16
     self.tileHeight = 16
     self.mapWidth = 30
