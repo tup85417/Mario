@@ -2,9 +2,9 @@ window_width = 1280
 window_height = 720
 
 virtual_width = 432
-virtual_heigth = 243
+virtual_height = 243
 
-class = require 'class'
+Class = require 'class'
 push = require 'push'
 
 require 'Util'
@@ -14,21 +14,29 @@ function love.load()
 
     map = Map()
 
-    push:setupScreen(virtual_width, virtual_heigth, window_width, window_height, {
+    love.graphics.setDefaultFilter('nearest', 'nearest')
+
+    push:setupScreen(virtual_width, virtual_height, window_width, window_height, {
         fullscreen = false,
-        resizable = false,
-        vsynce = true
+        resizable = false
     })
 
 end
 
+function love.keypressed(key)
+    if key == 'escape' then
+        love.event.quit()
+    end
+end
+
 function love.update(dt)
-    Map:update(dt)
+    map:update(dt)
 end
 
 function love.draw()
 
     push:apply('start')
+    love.graphics.translate(math.floor(-map.camX), math.floor(-map.camY))
     love.graphics.clear(108/255, 140/255, 255/255, 255/255)
     map:render()
     push:apply('end')
