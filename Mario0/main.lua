@@ -30,8 +30,6 @@ function love.draw()
 
     push:apply('start')
     love.graphics.clear(108/255, 140/255, 255/255, 255/255)
-    
-    love.graphics.translate(-map.camX, -map.camY)
     map:render()
     push:apply('end')
 
