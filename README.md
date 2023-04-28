@@ -1,7 +1,7 @@
 # Mario
 Creating a mario game for Final Project in CIS 1051
 
-# Difficulties
+### Difficulties
 
 First I had problems with the software I would use
 
