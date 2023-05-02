@@ -8,3 +8,8 @@ First I had problems with the software I would use
 Had to install lua and LOVE and I didn't know that at first
 
 Then I had a problem with capitalization that messed my code up as I was calling a variable that didn't exist (at least an hour sadly)
+
+
+https://youtu.be/m1DNsijfsOQ
+and also 
+https://youtu.be/Ofinhg2kGmo
